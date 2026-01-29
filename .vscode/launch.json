@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Debug With Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["F:\\EasyVM.exe", "编写一个可以生成序列号的注册机"],
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[project]
+name = "r2auto"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "hexdump>=3.3",
+    "openai>=2.16.0",
+    "python-dotenv>=1.2.1",
+    "r2pipe>=1.9.6",
+    "rich>=14.3.1",
+    "z3-solver>=4.15.4.0",
+]
