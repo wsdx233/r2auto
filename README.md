@@ -22,7 +22,7 @@
 
    ```bash
    pip install r2pipe python-dotenv openai rich
-   # 或者如果你使用 uv
+   # 推荐使用 uv
    uv sync
    ```
 
@@ -42,7 +42,7 @@
 ## 🚀 使用方法
 
 ```bash
-python main.py <target_binary> [prompt]
+uv run main.py <target_binary> [prompt]
 ```
 
 ### 参数说明
@@ -53,12 +53,12 @@ python main.py <target_binary> [prompt]
 
 **1. 基础启动**
 ```bash
-python main.py ./crackme.exe
+uv run main.py ./crackme.exe
 ```
 
 **2. 指定分析任务**
 ```bash
-python main.py ./crackme.exe "找出验证 License Key 的核心逻辑并尝试通过 r2 模拟或分析算法"
+uv run main.py ./crackme.exe "找出验证 License Key 的核心逻辑并尝试通过 r2 模拟或分析算法"
 ```
 
 ## 🤖 交互指南
