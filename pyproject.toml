@@ -12,3 +12,6 @@ dependencies = [
     "rich>=14.3.1",
     "z3-solver>=4.15.4.0",
 ]
+
+[project.scripts]
+r2auto = "main:main"

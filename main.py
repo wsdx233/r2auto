@@ -55,7 +55,7 @@ class R2AutoAgent:
         if not base_url or not api_key:
             console.print("[danger]Error: .env file missing OPENAI_BASE_URL or OPENAI_API_KEY[/danger]")
             sys.exit(1)
-        return OpenAI(base_url=base_url, api_key=api_key)
+        return OpenAI(base_url=base_url, api_key=api_key, default_headers=({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cherry Studio/0.7.3 Chrome/122.0.6261.156 Electron/29.1.5 Safari/537.36"}))
 
     def _init_r2(self):
         """初始化 r2pipe"""
